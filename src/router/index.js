@@ -8,6 +8,14 @@ const routes = [
     component: Home
   },
   {
+    path: '/products',
+    name: 'Products',
+    component: function(){
+      return import("../views/Products.vue");
+    },
+    props: true
+  },
+  {
     path: "/signup",
     name: "Signup",
     component: function(){
