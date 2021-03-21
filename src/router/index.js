@@ -8,6 +8,20 @@ const routes = [
     component: Home
   },
   {
+    path: "/branches",
+    name: "Branches",
+    component: function(){
+      return import("../views/Branches.vue");
+    }
+  },
+  {
+    path: "/branches/branch",
+    name: "Branch",
+    component: function(){
+      return import("../views/Branch.vue");
+    }
+  },
+  {
     path: "/signup",
     name: "Signup",
     component: function(){
