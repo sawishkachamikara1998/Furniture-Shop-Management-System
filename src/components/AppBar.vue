@@ -29,10 +29,10 @@
                 Categories
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size:24px">
-                <li><a class="dropdown-item" href="#">Wood</a></li>
-                <li><a class="dropdown-item" href="#">Plastic</a></li>
-                <li><a class="dropdown-item" href="#">Electronic</a></li>
-                <li><a class="dropdown-item" href="#">Gallary</a></li>
+                <li><a class="dropdown-item" href="/Products?code=wood">Wood</a></li>
+                <li><a class="dropdown-item" href="/Products?code=plastic">Plastic</a></li>
+                <li><a class="dropdown-item" href="/Products?code=electronic">Electronic</a></li>
+                <li><a class="dropdown-item" href="/Products?code=gallary">Gallary</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a class="dropdown-item" href="#">Documentation</a>
