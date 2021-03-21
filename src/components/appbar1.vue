@@ -4,7 +4,7 @@
       <div class="container-fluid">
         
         <a class="navbar-brand">
-            <img src="@\assets\logo.svg" style="height: 150px; width: 150px; margin-left:40px">
+           <a href="http://localhost:8081/"><img src="@\assets\logo.svg" style="height: 150px; width: 150px; margin-left:40px"></a> 
         </a>
          <h3 style="color: black; font-size:44px; text-align:center">NEW KAMAL PVT(LTD)</h3>
         <button
@@ -24,18 +24,19 @@
             
             
             
-
-            <form class="d-flex">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <a href="/signup" class="btn btn-primary btn-lg" tabindex="-1" role="button" style="margin-right:50px">Search</a>
-          </form>
+            <div class="search-bar" style="margin-top:20px">
+              <form class="d-flex" >
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <a href="#" class="btn btn-primary btn-lg" tabindex="-1" role="button" style="margin-right:50px">Search</a>
+            </form></div>
+            
 
             <li class="nav-item" style="padding:10px">
-              <a class="nav-link active" aria-current="page" href="/"><i class="fas fa-shopping-cart"></i></a>
+              <a class="nav-link active" aria-current="page" href="/" style="margin:10px"><i class="fas fa-shopping-cart"></i></a>
             </li>
 
             <li class="nav-item" style="padding:10px">
-              <a class="nav-link" href="/about"><i class="fas fa-heart"></i></a>
+              <a class="nav-link" href="/about" style="margin:10px; size: 30px"><i class="fas fa-heart"></i></a>
             </li>
 
 
