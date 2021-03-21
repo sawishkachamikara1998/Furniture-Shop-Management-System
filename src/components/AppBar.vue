@@ -2,7 +2,7 @@
   <div class="appbar">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        
         <button
           class="navbar-toggler"
           type="button"
@@ -14,15 +14,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
-            </li>
-            <li class="nav-item dropdown">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin:-20px">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size:24px">
+
+            <li class="nav-item dropdown" style="margin-left:40px">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -31,38 +26,50 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Categories
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size:24px">
+                <li><a class="dropdown-item" href="#">Wood</a></li>
+                <li><a class="dropdown-item" href="#">Plastic</a></li>
+                <li><a class="dropdown-item" href="#">Electronic</a></li>
+                <li><a class="dropdown-item" href="#">Gallary</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Documentation</a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
+
+            <li class="nav-item" style="padding:10px">
+              <a class="nav-link active" aria-current="page" href="/">Delivery</a>
             </li>
+            <li class="nav-item" style="padding:10px">
+              <a class="nav-link" href="/about">Branches</a>
+            </li>
+            <li class="nav-item" style="padding:10px">
+              <a class="nav-link" href="/about">Return</a>
+            </li>
+            <li class="nav-item" style="padding:10px">
+              <a class="nav-link" href="/about">My Account</a>
+            </li>
+            <li class="nav-item" style="padding:10px">
+              <a class="nav-link" href="/about">My Order</a>
+            </li>
+            <li class="nav-item" style="padding:10px">
+              <a class="nav-link" href="/about">Contact</a>
+            </li>
+            <li class="nav-item" style="padding:10px">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+
+            
+            
           </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <a href="/signup" class="btn btn-primary btn-lg" tabindex="-1" role="button">SignUp</a>
-          </form>
+          
         </div>
       </div>
     </nav>
   </div>
 </template>
+
+

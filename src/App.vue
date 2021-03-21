@@ -1,5 +1,6 @@
 <template>
   <div id="nav">
+    <TopAppBar />
     <AppBar />
     <div id="body">
       <router-view />
@@ -10,12 +11,14 @@
 
 <script>
 
+import TopAppBar from "@/components/appbar1.vue"
 import AppBar from "@/components/AppBar.vue";
 import Footer from "@/components/Footer.vue";
 export default {
   components: {
     AppBar,
-    Footer
+    Footer,
+    TopAppBar
   },
 }
 </script>
