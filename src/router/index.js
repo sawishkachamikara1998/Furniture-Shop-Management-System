@@ -29,6 +29,13 @@ const routes = [
     }
   },
   {
+    path: "/Delivery",
+    name: "Delivery",
+    component: function(){
+      return import("../views/Delivery.vue");
+    }
+  },
+  {
     path: "/about",
     name: "About",
     // route level code-splitting
