@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <h3>NEW KAMAL PVT(LTD)</h3>
     <div class="container">
       <div
         id="carouselExampleIndicators"
@@ -144,3 +143,10 @@ export default {
   },
 };
 </script>
+
+
+<style>
+  h2{
+  }
+</style>
+
