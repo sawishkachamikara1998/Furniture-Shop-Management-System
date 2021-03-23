@@ -17,7 +17,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin:-20px">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size:24px">
 
-            <li class="nav-item dropdown" style="margin-left:40px">
+            <li class="nav-item" style="padding:10px">
+              <a class="nav-link active" aria-current="page" href="http://localhost:8081/" style="margin-left: 120px;"><i class="fas fa-home"></i></a>
+            </li>
+
+            <li class="nav-item dropdown" style="margin-left:40px; margin-top: 10px">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -41,7 +45,7 @@
             </li>
 
             <li class="nav-item" style="padding:10px">
-              <a class="nav-link active" aria-current="page" href="/">Delivery</a>
+              <a class="nav-link active" aria-current="page" href="/delivery">Delivery</a>
             </li>
             <li class="nav-item" style="padding:10px">
               <a class="nav-link" href="/Branches">Branches</a>
@@ -71,6 +75,8 @@
     </nav>
   </div>
 </template>
+
+
 
 
 
