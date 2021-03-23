@@ -7,7 +7,34 @@ const routes = [
     name: "Home",
     component: Home
   },
-  
+ {
+  path: "/Branches",
+  name: "Branches",
+  component: function(){
+    return import("../views/Branches.vue");
+  }
+ },
+ {
+  path: "/Branches/Branch",
+  name: "Branch",
+  component: function(){
+    return import("../views/Branch.vue");
+  }
+ },
+ {
+  path: "/UpdateBranchForm",
+  name: "UpdateBranchForm",
+  component: function(){
+    return import("../views/UpdateBranchForm.vue");
+  }
+ },  
+ {
+  path: "/AddNewBranchForm",
+  name: "AddNewBranchForm",
+  component: function(){
+    return import("../views/AddNewBranchForm.vue");
+  }
+ },    
   {
     path: "/signup",
     name: "Signup",
@@ -15,13 +42,7 @@ const routes = [
       return import("../views/Signup.vue");
     }
   },
-  {
-    path: "/Delivery",
-    name: "Delivery",
-    component: function(){
-      return import("../views/Delivery.vue");
-    }
-  },
+
   {
     path: "/about",
     name: "About",
