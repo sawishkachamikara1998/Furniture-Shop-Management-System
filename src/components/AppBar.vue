@@ -46,6 +46,8 @@
 
             <li class="nav-item" style="padding:10px">
 
+              <a class="nav-link active" aria-current="page" href="/delivery">Delivery</a>
+
             </li>
             <li class="nav-item" style="padding:10px">
               <a class="nav-link" href="/Branches">Branches</a>
