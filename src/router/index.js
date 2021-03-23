@@ -42,30 +42,6 @@ const routes = [
       return import("../views/Signup.vue");
     }
   },
-  {
-    path: "/delivery",
-    name: "delivery",
-    component: function(){
-      return import("../views/delivery.vue");
-    }
-  },
-
-   
- {
-  path: "/addDeliveryDetail",
-  name: "addDeliveryDetail",
-  component: function(){
-    return import("../views/addDeliveryDetail.vue");
-  }
- }, 
- 
- {
-  path: "/editDeliveryDetails",
-  name: "editDeliveryDetails",
-  component: function(){
-    return import("../views/editDeliveryDetails.vue");
-  }
- },  
 
   {
     path: "/about",
