@@ -1,5 +1,5 @@
 <template>
-  <h2>My Shopping Cart</h2>
+  <center><h2>My Shopping Cart</h2></center>
     <div class="Cart">
 		<div class="container">
 			<div class="row" style="padding:10px">
@@ -129,7 +129,7 @@
 									</ul>
 									<div class="button5">
 										<button type="button" class="btn btn-primary">Checkout</button>
-                                        <button type="button" class="btn btn-primary">Continue shopping</button>
+                                        <button style="margin-left: 10px" type="button" class="btn btn-primary">Continue shopping</button>
 										
 									</div>
                                     
