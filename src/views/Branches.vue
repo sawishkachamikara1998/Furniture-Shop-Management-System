@@ -23,7 +23,7 @@
                     <div class="branch" style="margin-left:100px" >
                         <div class="mapouter">
                             <div class="gmap_canvas">
-                                <iframe width="700" height="700" id="gmap_canvas" src="https://www.google.lk/maps/place/8%C2%B008'57.2%22N+80%C2%B017'37.5%22E/@8.1492167,80.2930357,18z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d8.1492145!4d80.2937572?hl=en&authuser=0" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <iframe id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1108.3353081745713!2d80.29355248613341!3d8.150428548155816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afcef05f4e49db1%3A0xbde34f3479e74d61!2sUpmarket%20Private%20Limited!5e0!3m2!1sen!2slk!4v1617783974526!5m2!1sen!2slk" width="700" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             </div>
                         </div>
                     </div>
@@ -40,6 +40,8 @@ export default {
     data(){
         return{
             isUser: false,
+
+            
             branchList:[
                 {
                     code: '001',
@@ -55,7 +57,7 @@ export default {
                 },
                 {
                     code: '004',
-                    name: 'Madawachchiya  '
+                    name: 'Madawachchiya'
                 },
                 {
                     code: '005',
