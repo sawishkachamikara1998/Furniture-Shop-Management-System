@@ -24,7 +24,7 @@
                         </div>
                         <div class="col-md-6">  
                             
-                                <div class="branch" style="margin-left:50px" >
+                                <div class="branch">
                                     <div class="mapouter" style="margin:20px;">
                                     
                         
