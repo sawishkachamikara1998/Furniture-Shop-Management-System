@@ -61,7 +61,9 @@ name: "editDeliveryDetails",
 component: function(){
   return import("../views/editDeliveryDetails.vue");
 }
-},  
+}, 
+
+
   {
     path: "/signup",
     name: "Signup",
@@ -79,7 +81,16 @@ component: function(){
     component: function() {
       return import(/* webpackChunkName: "about" */ "../views/About.vue");
     }
-  }
+  },
+
+  {
+    path: "/deliveryConfirmTable",
+    name: "deliveryConfirmTable",
+    component: function(){
+      return import("../views/deliveryConfirmTable.vue");
+    }
+    },
+
 ];
 
 const router = createRouter({

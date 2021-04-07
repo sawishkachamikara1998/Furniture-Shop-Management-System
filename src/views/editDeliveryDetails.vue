@@ -36,9 +36,63 @@
             </div>
 
 
-            <div class="col-12">
+          <!--  <div class="col-12">
                 <button type="submit" class="btn btn-primary">Update Details</button>
+            </div> -->
+
+                  <div class="col-12" style="margin-top: 30px">
+        <!-- Button trigger modal -->
+
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Update Details
+        </button>
+
+        <!-- Modal -->
+        <div
+          style="margin-top: 100px"
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">Are you sure?</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                  @click="submit()"
+                >
+                  Confirm Update Details
+                </button>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
 </form>
     </div>
 
@@ -47,6 +101,18 @@
 
 <script>
 export default {
+
+    methods:{
+    submit() {
+      //send js code
+
+      setTimeout(() => {
+        this.$router.push({
+          path: "/delivery",
+        });
+      }, 3000);
+    },
+    }
 
 }
 </script>
