@@ -1,4 +1,5 @@
 <template>
+  <div>
   <a href="/Producteditform">
     <div class="editbtn2">
       <button
@@ -101,6 +102,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
