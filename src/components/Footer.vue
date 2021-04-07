@@ -5,9 +5,9 @@
             <div class="quick_links">
                 <h4>Quick Links</h4>
                 <ul id="list_1">
-                    <li><a href="#">Insurance</a></li>
-                    <li><a href="#">Claim</a></li>
-                    <li><a href="#">Inquire</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Branches</a></li>
+                    <li><a href="#">Delivery</a></li>
                     <li><a href="#">About us</a></li>
                 </ul>
             </div>
@@ -24,12 +24,12 @@
             <hr>
         <!--contact details-->
         <div class="contact_us">
-            <h3>SAFEWAY INSURANCE LIMITD</h3>
+            <h3>NEW KAMAL PVT(LTD)</h3>
             <ul>
-                <li>Address: New kandy Road, Kaduwela, Malabe.</li>
+                <li>Address: Kurunegala Road, Thambuttegama, Anuradhapura.</li>
                 <li>Tel: <a href="tel:+94112345678">0112345678</a></li>
                 <li>Fax: <a href="fax: 0114567891">0114567891</a></li>
-                <li>Email: <a href="mailto:support@safeway.com">support@safeway.com</a></li>
+                <li>Email: <a href="mailto:support@newkamal.com">support@newkamal.com</a></li>
             </ul>
             <div class="social">
                 <a href=https://www.facebook.com><i class="fab fa-facebook-f fa-lg"></i></a>
@@ -48,7 +48,7 @@
     </footer>
     <hr>
     <div class="copyright">
-    <center><p>&copy; 2020 Safeway Insurance Limited | All Rights Reserved</p></center>
+    <center><p>&copy; NEW KAMAL PVT(LTD) | All Rights Reserved</p></center>
     </div>
 
   </div>
