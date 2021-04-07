@@ -43,6 +43,11 @@
             <li class="nav-item" style="padding:10px">
               <a href="/signup" class="btn btn-primary btn-lg" tabindex="-1" role="button" >Sign Up</a>
               <a href="/signin" class="btn btn-primary btn-lg" tabindex="-1" role="button" style="margin: 10px">Sign In</a>
+
+            </li>
+
+            <li class="nav-item" >
+              <a class="nav-link" href="/Profile" style="size: 30px"><i class="fas fa-user-circle"></i></a>
             </li>
         
           </ul>

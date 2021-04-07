@@ -7,6 +7,38 @@ const routes = [
     name: "Home",
     component: Home
   },
+  {
+    path: "/SignIn",
+    name: "Signin",
+    component: function(){
+      return import("../views/SignIn.vue");
+    }
+
+  },
+  {
+    path: "/SignUp",
+    name: "SignUp",
+    component: function(){
+      return import("../views/SignUp.vue");
+    }
+  },
+
+  {
+    path: "/Profile",
+    name: "Profile",
+    component: function(){
+      return import("../views/Profile.vue");
+    }
+  },
+
+  {
+    path: "/ProfileSettings",
+    name: "ProfileSettings",
+    component: function(){
+      return import("../views/ProfileSettings.vue");
+    }
+  },
+
  {
   path: "/Branches",
   name: "Branches",
@@ -62,13 +94,7 @@ component: function(){
   return import("../views/editDeliveryDetails.vue");
 }
 },  
-  {
-    path: "/signup",
-    name: "Signup",
-    component: function(){
-      return import("../views/Signup.vue");
-    }
-  },
+  
 
   {
     path: "/about",
