@@ -84,34 +84,7 @@ component: function(){
       return import("../views/Signup.vue");
     }
   },
-  {
-    path: "/feedbackAdmin",
-    name: "feedbackAdmin",
-    component: function(){
-      return import("../views/feedbackAdmin.vue");
-    }
-    }, 
-    {
-      path: "/feedbackAdminReply",
-      name: "feedbackAdminReply",
-      component: function(){
-        return import("../views/feedbackAdminReply.vue");
-      }
-      },
-      {
-        path: "/feedbackAdminReplyEdit",
-        name: "feedbackAdminReplyEdit",
-        component: function(){
-          return import("../views/feedbackAdminReplyEdit.vue");
-        }
-        },
-        {
-          path: "/feedbackAdminSeePercentage",
-          name: "feedbackAdminSeePercentage",
-          component: function(){
-            return import("../views/feedbackAdminSeePercentage.vue");
-          }
-          },
+
 
   {
     path: "/about",
@@ -143,7 +116,38 @@ component: function(){
     component: function() {
       return import("../views/Producteditform.vue");
     }
-  }
+  },
+  {
+    path: "/feedbackAdmin",
+    name: "feedbackAdmin",
+    component: function(){
+      return import("../views/feedbackAdmin.vue");
+    }
+    }, 
+    {
+      path: "/feedbackAdminReply",
+      name: "feedbackAdminReply",
+      component: function(){
+        return import("../views/feedbackAdminReply.vue");
+      }
+      },
+      {
+        path: "/feedbackAdminReplyEdit",
+        name: "feedbackAdminReplyEdit",
+        component: function(){
+          return import("../views/feedbackAdminReplyEdit.vue");
+        }
+        },
+        {
+          path: "/feedbackAdminSeePercentage",
+          name: "feedbackAdminSeePercentage",
+          component: function(){
+            return import("../views/feedbackAdminSeePercentage.vue");
+          }
+          },
+
+
+
 ];
 
 
