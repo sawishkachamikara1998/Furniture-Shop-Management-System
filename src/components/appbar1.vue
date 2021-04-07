@@ -4,7 +4,7 @@
       <div class="container-fluid">
         
         <a class="navbar-brand">
-           <a href="http://localhost:8081/"><img src="@\assets\logo.svg" style="height: 150px; width: 150px; margin-left:40px"></a> 
+           <a href="/"><img src="@\assets\logo.svg" style="height: 150px; width: 150px; margin-left:40px"></a> 
         </a>
          <h3 style="color: black; font-size:44px; text-align:center">NEW KAMAL PVT(LTD)</h3>
         <button
