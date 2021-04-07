@@ -93,6 +93,27 @@ component: function(){
     component: function() {
       return import(/* webpackChunkName: "about" */ "../views/About.vue");
     }
+  },
+  {
+    path: "/products",
+    name: "Products",
+    component: function() {
+      return import("../views/Products.vue");
+    }
+  },
+  {
+    path: "/Products/productedit",
+    name: "Productedit",
+    component: function() {
+      return import("../views/Productedit.vue");
+    }
+  },
+  {
+    path: "/producteditform",
+    name: "Producteditform",
+    component: function() {
+      return import("../views/Producteditform.vue");
+    }
   }
 ];
 
