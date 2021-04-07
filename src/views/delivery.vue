@@ -38,6 +38,9 @@
 
 <script>
 export default {
+
+
+    
     data(){
         return{
             isUser: false,
@@ -103,6 +106,7 @@ export default {
                     productname: 'sofa',
                     warrantyno: '01234'
                 },
+                
             ]
         }
     }
