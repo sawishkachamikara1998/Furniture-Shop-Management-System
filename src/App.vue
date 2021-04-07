@@ -2,13 +2,9 @@
   <div id="nav">
     <TopAppBar />
     <AppBar />
-
     <div id="body">
       <router-view />
     </div>
-
-
-    
     <Footer/>
   </div>
 </template>

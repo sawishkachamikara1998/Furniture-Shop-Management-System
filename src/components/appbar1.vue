@@ -4,7 +4,7 @@
       <div class="container-fluid">
         
         <a class="navbar-brand">
-           <a href="http://localhost:8081/"><img src="@\assets\logo.svg" style="height: 150px; width: 150px; margin-left:40px"></a> 
+           <a href="/"><img src="@\assets\logo.svg" style="height: 150px; width: 150px; margin-left:40px"></a> 
         </a>
          <h3 style="color: black; font-size:44px; text-align:center">NEW KAMAL PVT(LTD)</h3>
         <button
@@ -32,11 +32,11 @@
             
 
             <li class="nav-item" style="padding:10px">
-              <a class="nav-link active" aria-current="page" href="/" style="margin:10px"><i class="fas fa-shopping-cart"></i></a>
+              <a class="nav-link active" aria-current="page" href="/cart" style="margin:10px"><i class="fas fa-shopping-cart"></i></a>
             </li>
 
             <li class="nav-item" style="padding:10px">
-              <a class="nav-link" href="/about" style="margin:10px; size: 30px"><i class="fas fa-heart"></i></a>
+              <a class="nav-link" href="/wishlist" style="margin:10px; size: 30px"><i class="fas fa-heart"></i></a>
             </li>
 
 

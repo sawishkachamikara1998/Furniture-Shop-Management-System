@@ -15,6 +15,20 @@ const routes = [
   }
  },
  {
+  path: "/cart",
+  name: "Cart",
+  component: function(){
+    return import("../views/Cart.vue");
+  }
+ },
+ {
+  path: "/wishlist",
+  name: "Wishlist",
+  component: function(){
+    return import("../views/Wishlist.vue");
+  }
+ },
+ {
   path: "/Branches/Branch",
   name: "Branch",
   component: function(){
@@ -107,6 +121,27 @@ component: function(){
     // which is lazy-loaded when the route is visited.
     component: function() {
       return import(/* webpackChunkName: "about" */ "../views/About.vue");
+    }
+  },
+  {
+    path: "/products",
+    name: "Products",
+    component: function() {
+      return import("../views/Products.vue");
+    }
+  },
+  {
+    path: "/Products/productedit",
+    name: "Productedit",
+    component: function() {
+      return import("../views/Productedit.vue");
+    }
+  },
+  {
+    path: "/producteditform",
+    name: "Producteditform",
+    component: function() {
+      return import("../views/Producteditform.vue");
     }
   }
 ];
