@@ -7,37 +7,75 @@ const routes = [
     name: "Home",
     component: Home
   },
-  {
-    path: '/products',
-    name: 'Products',
-    component: function(){
-      return import("../views/Products.vue");
-    }
-  },
-  {
-    path: '/Productadd',
-    name: 'Productadd',
-    component: function(){
-      return import("../views/Productadd.vue");
-    }
-  },
+ {
+  path: "/Branches",
+  name: "Branches",
+  component: function(){
+    return import("../views/Branches.vue");
+  }
+ },
+ {
+  path: "/cart",
+  name: "Cart",
+  component: function(){
+    return import("../views/Cart.vue");
+  }
+ },
+ {
+  path: "/wishlist",
+  name: "Wishlist",
+  component: function(){
+    return import("../views/Wishlist.vue");
+  }
+ },
+ {
+  path: "/Branches/Branch",
+  name: "Branch",
+  component: function(){
+    return import("../views/Branch.vue");
+  }
+ },
+ {
+  path: "/UpdateBranchForm",
+  name: "UpdateBranchForm",
+  component: function(){
+    return import("../views/UpdateBranchForm.vue");
+  }
+ },  
+ {
+  path: "/AddNewBranchForm",
+  name: "AddNewBranchForm",
+  component: function(){
+    return import("../views/AddNewBranchForm.vue");
+  }
+ }, 
+ 
+ 
+ {
 
-  {
-    path: '/Producteditform',
-    name: 'Producteditform',
-    component: function(){
-      return import("../views/Producteditform.vue");
-    }
-  },
+  path: "/delivery",
+  name: "delivery",
+  component: function(){
+    return import("../views/delivery.vue");
+  }
+},
 
-  {
-    path: '/Products/Productedit',
-    name: 'Products-Productedit',
-    component: function(){
-      return import("../views/Productedit.vue");
-    }
-  },
+ 
+{
+path: "/addDeliveryDetail",
+name: "addDeliveryDetail",
+component: function(){
+  return import("../views/addDeliveryDetail.vue");
+}
+}, 
 
+{
+path: "/editDeliveryDetails",
+name: "editDeliveryDetails",
+component: function(){
+  return import("../views/editDeliveryDetails.vue");
+}
+},  
   {
     path: "/signup",
     name: "Signup",
@@ -45,6 +83,7 @@ const routes = [
       return import("../views/Signup.vue");
     }
   },
+
   {
     path: "/about",
     name: "About",
