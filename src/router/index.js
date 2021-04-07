@@ -15,6 +15,20 @@ const routes = [
   }
  },
  {
+  path: "/cart",
+  name: "Cart",
+  component: function(){
+    return import("../views/Cart.vue");
+  }
+ },
+ {
+  path: "/wishlist",
+  name: "Wishlist",
+  component: function(){
+    return import("../views/Wishlist.vue");
+  }
+ },
+ {
   path: "/Branches/Branch",
   name: "Branch",
   component: function(){

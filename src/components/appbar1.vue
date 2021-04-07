@@ -32,11 +32,11 @@
             
 
             <li class="nav-item" style="padding:10px">
-              <a class="nav-link active" aria-current="page" href="/" style="margin:10px"><i class="fas fa-shopping-cart"></i></a>
+              <a class="nav-link active" aria-current="page" href="/cart" style="margin:10px"><i class="fas fa-shopping-cart"></i></a>
             </li>
 
             <li class="nav-item" style="padding:10px">
-              <a class="nav-link" href="/about" style="margin:10px; size: 30px"><i class="fas fa-heart"></i></a>
+              <a class="nav-link" href="/wishlist" style="margin:10px; size: 30px"><i class="fas fa-heart"></i></a>
             </li>
 
 
