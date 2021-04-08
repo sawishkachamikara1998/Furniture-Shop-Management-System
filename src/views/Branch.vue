@@ -19,6 +19,7 @@
                                         </div>
                                         <h3>Contact Info</h3>
                                         <p>{{this.branchList.contactInfo}}</p>
+                                        
                                 </div> 
                             
                         </div>
