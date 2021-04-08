@@ -15,6 +15,20 @@ const routes = [
   }
  },
  {
+  path: "/cart",
+  name: "Cart",
+  component: function(){
+    return import("../views/Cart.vue");
+  }
+ },
+ {
+  path: "/wishlist",
+  name: "Wishlist",
+  component: function(){
+    return import("../views/Wishlist.vue");
+  }
+ },
+ {
   path: "/Branches/Branch",
   name: "Branch",
   component: function(){
@@ -63,7 +77,6 @@ component: function(){
 }
 }, 
 
-
   {
     path: "/signup",
     name: "Signup",
@@ -71,6 +84,7 @@ component: function(){
       return import("../views/Signup.vue");
     }
   },
+
 
   {
     path: "/about",
@@ -82,16 +96,71 @@ component: function(){
       return import(/* webpackChunkName: "about" */ "../views/About.vue");
     }
   },
-
   {
-    path: "/deliveryConfirmTable",
-    name: "deliveryConfirmTable",
-    component: function(){
-      return import("../views/deliveryConfirmTable.vue");
+    path: "/products",
+    name: "Products",
+    component: function() {
+      return import("../views/Products.vue");
     }
-    },
+  },
+  {
+    path: "/Products/productedit",
+    name: "Productedit",
+    component: function() {
+      return import("../views/Productedit.vue");
+    }
+  },
+  {
+    path: "/producteditform",
+    name: "Producteditform",
+    component: function() {
+      return import("../views/Producteditform.vue");
+    }
+  },
+  {
+    path: "/feedbackAdmin",
+    name: "feedbackAdmin",
+    component: function(){
+      return import("../views/feedbackAdmin.vue");
+    }
+    }, 
+    {
+      path: "/feedbackAdminReply",
+      name: "feedbackAdminReply",
+      component: function(){
+        return import("../views/feedbackAdminReply.vue");
+      }
+      },
+      {
+        path: "/feedbackAdminReplyEdit",
+        name: "feedbackAdminReplyEdit",
+        component: function(){
+          return import("../views/feedbackAdminReplyEdit.vue");
+        }
+        },
+
+        {
+          path: "/feedbackAdminSeePercentage",
+          name: "feedbackAdminSeePercentage",
+          component: function(){
+            return import("../views/feedbackAdminSeePercentage.vue");
+          }
+          },
+
+          {
+            path: "/deliveryConfirmTable",
+            name: "deliveryConfirmTable",
+            component: function(){
+              return import("../views/deliveryConfirmTable.vue");
+            }
+          }
+         
 
 ];
+
+
+
+
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
@@ -99,3 +168,5 @@ const router = createRouter({
 });
 
 export default router;
+
+

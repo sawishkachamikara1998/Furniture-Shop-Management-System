@@ -29,12 +29,24 @@
           ></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img :src="this.activeImage.image" class="d-block w-100" style="height: 600px" />
-            </div>
-            <div class="carousel-item" v-for="(image, i) in this.imagesList" :key="i">
-              <img :src="image.image" class="d-block w-100" style="height: 600px" />
-            </div>
+          <div class="carousel-item active">
+            <img
+              :src="this.activeImage.image"
+              class="d-block w-100"
+              style="height: 600px"
+            />
+          </div>
+          <div
+            class="carousel-item"
+            v-for="(image, i) in this.imagesList"
+            :key="i"
+          >
+            <img
+              :src="image.image"
+              class="d-block w-100"
+              style="height: 600px"
+            />
+          </div>
         </div>
         <button
           class="carousel-control-prev"
@@ -86,11 +98,18 @@
 
 export default {
   name: "Home",
+  async mounted() {
+    this.axios
+      .get("http://localhost:3000/api/v1/products/allProducts")
+      .then((response) => {
+        console.log(response.data);
+      });
+  },
   data() {
     return {
       activeImage: {
         image:
-            "https://th.bing.com/th/id/OIP.bS2wHrBMEWxM0iE2s90HygHaFr?w=255&h=195&c=7&o=5&dpr=1.25&pid=1.7",
+          "https://th.bing.com/th/id/OIP.bS2wHrBMEWxM0iE2s90HygHaFr?w=255&h=195&c=7&o=5&dpr=1.25&pid=1.7",
       },
       imagesList: [
         {
@@ -109,7 +128,7 @@ export default {
           image:"https://th.bing.com/th/id/OIP.NQ1qLgXTEIjdNlzMJW1V0wD6D6?w=206&h=206&c=7&o=5&dpr=1.25&pid=1.7",
           price: "3500LKR",
         },
-       
+
         {
           name: "Cheeze",
           code: "Table",
@@ -125,13 +144,13 @@ export default {
          {
           name: "Cheeze",
           code: "Washing machine",
-          image:"https://th.bing.com/th/id/OIP.dp-nNvKXYs2hS0o2tcOkWAHaJF?w=206&h=253&c=7&o=5&dpr=1.25&pid=1.7",  
+          image:"https://th.bing.com/th/id/OIP.dp-nNvKXYs2hS0o2tcOkWAHaJF?w=206&h=253&c=7&o=5&dpr=1.25&pid=1.7",
           price: "60000LKR",
         },
          {
           name: "Cheeze",
           code: "Blender",
-          image:"https://th.bing.com/th/id/OIP.1AHNdHDBLx4EThDzL2TyIQHaHa?w=213&h=213&c=7&o=5&dpr=1.25&pid=1.7",  
+          image:"https://th.bing.com/th/id/OIP.1AHNdHDBLx4EThDzL2TyIQHaHa?w=213&h=213&c=7&o=5&dpr=1.25&pid=1.7",
           price: "60000LKR",
         },
         {
@@ -159,8 +178,4 @@ export default {
 </script>
 
 
-<style>
-  h2{
-  }
-</style>
 

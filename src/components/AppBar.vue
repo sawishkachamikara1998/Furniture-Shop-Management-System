@@ -67,7 +67,9 @@
             <li class="nav-item" style="padding:10px">
               <a class="nav-link" href="/">About</a>
             </li>
-
+             <li class="nav-item" style="padding:10px">
+              <a class="nav-link" href="/feedbackAdmin">Feedback</a>
+            </li>
             
             
           </ul>
