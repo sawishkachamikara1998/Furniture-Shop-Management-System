@@ -5,7 +5,7 @@
 
        
   <a href="/feedbackAdminSeePercentage">
-   <button style="margin:7px" type="button" class="btn btn-primary">See percentages of negative and positive feedback</button>
+   <button style="margin7px" type="button" class="btn btn-primary">See percentages of negative and positive feedback</button>
   </a>
 
   
@@ -45,9 +45,19 @@
               >
                 See More
               </button>
-              <button 
+              <button  style="margin-right:100px"
               type="button" class="btn btn-danger">Delete</button>
+<a href="/feedbackAdminReply">
+  <button    style="margin-right:100px"
+  
+              type="button" class="btn btn-danger">Reply</button>
+</a>
 
+<a href="/feedbackAdminReplyEdit">
+  <button 
+  
+              type="button" class="btn btn-danger">Edit reply</button>
+</a>
               
               <!-- <button
                 style="margin-left: 100px"
@@ -94,15 +104,15 @@
                       </td>
                     </div>
                     <div class="modal-footer">
-                      <a href="/feedbackAdminReplyEdit" style="margin-right:20px"
+                      <!-- <a href="/feedbackAdminReplyEdit" style="margin-right:20px"
                         >Edit Reply
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit Reply</button> -->
+                        
                       </a>
                       <a href="/feedbackAdminreply" style="margin-right:20px"
                         >Reply
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit Reply</button> -->
+                        
                     
-                      </a>
+                      </a> -->
 
 
                   
