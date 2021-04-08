@@ -146,7 +146,86 @@ component: function(){
           }
           },
 
+          // stock
 
+
+
+  {
+    path: "/stockdashboad",
+    name: "stockdashboad",
+    
+    component: function(){
+      return import("../views/stockdashboad.vue");
+  },
+},
+  {
+    path: "/stockreport",
+    name: "stockreport",
+    
+    component: function(){
+      return import("../views/stockreport.vue");
+  },
+},
+  {
+    path: "/deletestock",
+    name: "deletestock",
+    component: function(){
+      return import("../views/deletestock.vue");
+  },
+},
+{
+  
+    path: "/updatestock",
+    name: "updatestock",
+    component: function(){
+      return import("../views/updatestock.vue");
+  },
+},
+{
+    path: "/vendor",
+    name: "vendor",
+    component: function(){
+      return import("../views/vendor.vue");
+  },
+},
+{
+  
+    path: "/stocklist",
+    name: "stocklist",
+    component: function(){
+      return import("../views/stocklist.vue");
+  },
+},
+  
+  {
+    path: "/addnewstock",
+    name: "addnewstock",
+    
+    component: function(){
+      return import("../views/addnewstock.vue");
+  },
+},
+  
+  
+  // {
+  //   path: "/addstock",
+  //   name: "addstock",
+  //   component: addstock,
+  // },
+  {
+    path: "/about",
+    name: "About",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+  },
+
+
+
+
+  // stock
 
 ];
 

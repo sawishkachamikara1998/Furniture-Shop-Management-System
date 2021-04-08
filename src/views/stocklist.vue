@@ -2,12 +2,14 @@
   <div>
     <div class="row"></div>
     <div class="row"></div>
+    
     <div class="row">
       <div class="col-md-3">
         <div class="row"></div>
         <div class="row"></div>
+        
         <div class="row">
-          <div class="card" style="height: 600px">
+          <div class="card" style="height: 600px; width:350px">
             <div class="card-body">
               <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
@@ -155,60 +157,11 @@ export default {
           ProductCode: "0123",
           ProductName: "key-bord-201",
          VendorName: "A.M.D Sawishka",
-          warrantyno: "1287",
-          hj: "dfghjk",
-          yu: "ickvbkn",
+          Date: "2021/01/05",
+        VendorCode: "dfghjk",
+         
         },
-        {
-          code: "002",
-          delivername: "Wasantha",
-          deliverdate: "2021.12.14",
-          Vehicalno: "GH-5978",
-          customername: "Shanaka Geethangana",
-          customeraddress: "38A,udyana Mawatha, Gangodavila, Nugegoda",
-          productname: "Cup Board",
-          warrantyno: "6875",
-        },
-        {
-          code: "003",
-          delivername: "Dimantha",
-          deliverdate: "2021.12.14",
-          Vehicalno: "BN-4756",
-          customername: "Asiri Piyumantha",
-          customeraddress: "38A,udyana Mawatha, Gangodavila, Nugegoda",
-          productname: "Electric Awon",
-          warrantyno: "0134",
-        },
-        {
-          code: "004",
-          delivername: "Samantha",
-          deliverdate: "2021.12.14",
-          Vehicalno: "TY-8970",
-          customername: "Chamika Sirivardana",
-          customeraddress: "38A,udyana Mawatha, Gangodavila, Nugegoda",
-          productname: "Piyano",
-          warrantyno: "0975",
-        },
-        {
-          code: "005",
-          delivername: "Sathyananda",
-          deliverdate: "2021.12.14",
-          Vehicalno: "YU-8797",
-          customername: "Maduka Senavirathne",
-          customeraddress: "38A,udyana Mawatha, Gangodavila, Nugegoda",
-          productname: "Table",
-          warrantyno: "1209",
-        },
-        {
-          code: "006",
-          delivername: "Dayananda",
-          deliverdate: "2021.12.14",
-          Vehicalno: "KT-1234",
-          customername: "Kanaka Bashitha",
-          customeraddress: "38A,udyana Mawatha, Gangodavila, Nugegoda",
-          productname: "sofa",
-          warrantyno: "01234",
-        },
+       
       ],
     };
   },

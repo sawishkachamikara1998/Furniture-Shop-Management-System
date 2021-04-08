@@ -1,11 +1,10 @@
-
-
-
+/* eslint-disable prettier/prettier */
+/* eslint-disable prettier/prettier */
 <template>
-  <div class="card" style="width: 1200px; height: 720px">
+  <div class="card" style="width: 1200px; height: 720px; padding: 60px">
     <div class="card-body">
       <form class="row g-3">
-        <div class="col-md-6" style="padding: 15px">
+        <div class="col-md-6" style="padding: 35px">
           <div class="row">
             <label for="staticEmail" class="col-sm-2 col-form-label"
               ><i class="fas fa-tags"></i
@@ -28,7 +27,7 @@
           </div>
         </div>
 
-        <div class="col-md-6" style="padding: 15px">
+        <div class="col-md-6" style="padding: 35px">
           <div class="row">
             <label for="staticEmail" class="col-sm-2 col-form-label"
               ><i class="fas fa-tags"></i
@@ -52,13 +51,14 @@
           </div>
         </div>
 
-        <div class="col-md-6" style="padding: 15px">
+        <div class="col-md-6" style="padding: 35px">
           <div class="row">
             <label for="staticEmail" class="col-sm-2 col-form-label"
               ><i class="fas fa-tags"></i
             ></label>
             <div class="col-sm-10">
               <input
+                v-model="date"
                 type="date"
                 class="form-control"
                 id="inputEmail03"
@@ -68,7 +68,7 @@
           </div>
         </div>
 
-        <div class="col-md-6" style="padding: 15px">
+        <div class="col-md-6" style="padding: 35px">
           <div class="row">
             <label for="staticEmail" class="col-sm-2 col-form-label"
               ><i class="fas fa-tags"></i
@@ -92,7 +92,7 @@
           </div>
         </div>
 
-        <div class="col-md-6" style="padding: 15px">
+        <div class="col-md-6" style="padding: 35px">
           <div class="row">
             <label for="staticEmail" class="col-sm-2 col-form-label"
               ><i class="fas fa-tags"></i
@@ -116,7 +116,7 @@
           </div>
         </div>
 
-        <div class="col-md-6" style="padding: 15px">
+        <div class="col-md-6" style="padding: 35px">
           <div class="row">
             <label for="staticEmail" class="col-sm-2 col-form-label"
               ><i class="fas fa-tags"></i
@@ -140,7 +140,7 @@
           </div>
         </div>
 
-        <div class="col-md-6" style="padding-right: 15px">
+        <div class="col-md-6" style="padding: 35px">
           <div class="row">
             <label for="staticEmail" class="col-sm-2 col-form-label"
               ><i class="fas fa-tags"></i
@@ -164,7 +164,7 @@
           </div>
         </div>
 
-        <div class="col-md-6" style="padding: 5px">
+        <div class="col-md-6" style="padding: 35px">
           <div class="row">
             <label for="staticEmail" class="col-sm-2 col-form-label"
               ><i class="fas fa-tags"></i
@@ -196,23 +196,41 @@
               <div class="col-md-3"></div>
               <div class="col-md-3"></div>
               <div class="col-md-6">
-                
                 <button
                   type="button"
                   class="btn btn-primary"
-                  style="margin-right:70px"
+                  style="margin-right: 70px"
                 >
                   Clear
                 </button>
 
-                <button type="button" class="btn btn-primary">
-                  Submit
-                </button>
+                <div class="col-12">
+                  <input
+                    @click="submitaddstock()"
+                    type="button"
+                    class="btn btn-primary btnSeccion"
+                    id="btnSeccion3"
+                    value="Add Stock"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </form>
+
+
+      <div class="row">
+        <div class="col" style="margin-left: 20px; margin-right:20px">
+        <div class="alert alert-success" role="alert" v-if="success">
+            {{successMessage}}
+        </div>
+        <div class="alert alert-danger" role="alert" v-if="error" >
+            {{errorMessage}}
+        </div>
+        </div>
+    </div>
+
     </div>
   </div>
 </template>
@@ -220,6 +238,46 @@
 
 <script>
 export default {
+  methods: {
+
+      async submitaddstock(){
+      
+      await this.axios.post("http://localhost:3000/api/v1/stock/addstocklist", {
+
+
+          brandName: this.brandName,
+          prodName:this.productName,
+          prodCode: this.ProductCode,
+          date: this.date,
+          vendorName: this.vendrname,
+          quantity: this.vendrcode,
+          category: this.category,
+          vendorPrice: this.price,
+
+
+      })
+
+      .then((response) => { console.log(response.data)
+        this.res = response.data; 
+          if(!this.res.status){  
+            this.error = true; 
+            this.errorMessage = "error"; 
+            setTimeout (() => { this.error = false }, 3000);
+            } 
+          else {
+            this.success = true; 
+            this.successMessage = "success added"
+            setTimeout(() => this.$router.push({path:'/addnewstock'}),
+           3000 ); 
+          }
+        }
+      );
+
+
+
+      }
+
+  },
   computed: {
     setProductName: {
       get() {
@@ -342,25 +400,40 @@ export default {
   data() {
     return {
       errorProductName: false,
-      productName: "Product Name",
+      productName: "",
 
       errorBrandName: false,
-      brandName: "Brand Name",
+      brandName: "",
 
       errorproductcode: false,
-      ProductCode: "Product Code",
+      ProductCode: "",
 
       errorvendercode: false,
-      vendrcode: "Vendor Code",
+      vendrcode: "",
 
       errorvendorname: false,
-      vendrname: "Vendor Name",
+      vendrname: "",
 
       errortype: false,
-      category: "Category",
+      category: "",
 
       errorprice: false,
-      price: "Vendor price",
+      price: "",
+
+
+      res: [],
+      error: false,
+      errorMessage: "", 
+      success: false,
+      successMessage: "",
+      proName: "",
+      proCode: "",
+      date: "",
+      vendorName: "",
+      quantity: "",
+      vendorPrice: "",
+      
+
     };
   },
 };
